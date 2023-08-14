@@ -1,13 +1,15 @@
 .header,
 .footer,
-section {
+.cover,
+.lots,
+.about {
   margin:auto;
   color: #000;
 }
 
+
 .header {
   width: 100%;
-  max-width: 1440px;
   padding: 92px 50px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -23,10 +25,7 @@ section {
 .header_links-list {
   display: flex;
   list-style: circle; 
-}
-
-.header_links-list-item {
-  padding-right: 33px;
+  column-gap: 33px;
 }
 
 .header_links-list-item_no-bullit {
@@ -43,18 +42,17 @@ section {
   height: 105px;
 }
 
-
 .header_address {
   max-width: 240px;
+  width: 100%;
+  font-style: normal;
   justify-self: end;
 }
 
-
 .cover {
-  padding: 165px 50px 62px;
+  padding: 165px 50px 50px;
   margin-bottom: 180px;
-  max-width: 1440px;
-  height: 757px;
+  min-height: 757px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -63,7 +61,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .overlay {
@@ -74,7 +72,7 @@ section {
   background-position: center;
   position:absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .cover-title {  
@@ -85,6 +83,7 @@ section {
   font-weight: 700;
   letter-spacing: 30px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .cover-text {
@@ -105,9 +104,9 @@ section {
   letter-spacing: 60px;
 }
 
-.word_space-extended {
+/*.word_space-extended {
   word-spacing: 20px;
-}
+}*/
 
 .null_letter-spacing {
   letter-spacing: 0;
@@ -117,9 +116,7 @@ section {
   display:flex;
   justify-self: center;
   align-items: center;
-  padding-top: 137px; 
-  padding-bottom: 60px;
-  position: relative;
+  padding-top: 140px; 
 }
 
 .cover-description-text,
@@ -151,7 +148,6 @@ section {
 .lots,
 .about {
   padding: 0 50px;
-  max-width: 1440px;
   margin-bottom: 180px;
 }
 
@@ -167,9 +163,16 @@ section {
 .lots_card-list {
   padding: 27px 0 30px;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   margin: auto;
   list-style: none;
+}
+
+.lots_card-list-item {
+  flex-basis: 430px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 a .card-link {
@@ -181,11 +184,13 @@ a .card-link {
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  width: 430px;
   min-height: 450px;
-  flex-grow: 1;
   position: relative;
-  z-index: -2;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .card-title {
@@ -213,33 +218,19 @@ a .card-link {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  z-index: 1;
 }
 
 .card-type-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: -2;
 }
 
 .card-type-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -2;
 }
 
 .card-type-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -2;
 }
 
 .lots_look-more-link {
@@ -266,7 +257,7 @@ a .card-link {
 }
 
 .about_logo {
-  padding-left: 95px;
+  padding: 63px 46px;
   height: 240px;
   width: 240px;
   background-color: #000;
@@ -276,22 +267,17 @@ a .card-link {
   justify-self: center;
   align-self: center;
   z-index: 0;
-  
 }
 
 .about_logo-image {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  justify-self: center;
-  align-self: center;
   z-index: 1;
   height: 114px;
   width: 148px;
 }
 
 .about_title {
-  padding-left: 10px;
-  padding-top: 5px;
+  padding-left: 12px;
+  padding-top: 15px;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -312,8 +298,7 @@ a .card-link {
   justify-self: left;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  
+  gap: 22px;
 }
 
 .footer {
@@ -321,7 +306,6 @@ a .card-link {
   padding-right: 50px;
   padding-bottom: 90px;
   min-height: 97px;
-  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
@@ -330,6 +314,10 @@ a .card-link {
   font-weight: 400;
   line-height: 24.3px;
   text-underline-offset: 4px;
+}
+
+.footer_address {
+  max-width: 240px;
 }
 
 .footer_menu-list {
@@ -342,7 +330,7 @@ a .card-link {
 .footer_social-list {
   display: flex;
   max-width: 240px;
-  max-height: 55px;
+  min-height: 55px;
   justify-content: center;
   list-style: none;
   column-gap: 45px;
@@ -350,7 +338,6 @@ a .card-link {
 
 .footer_social-list-item {
   justify-self: center;
-  align-self: center;
 }
 
 .footer_social-icon {
