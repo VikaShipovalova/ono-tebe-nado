@@ -3,7 +3,7 @@
 .cover,
 .lots,
 .about {
-  margin:auto;
+  margin: auto;
   color: #000;
 }
 
@@ -23,7 +23,7 @@
 
 .header_links-list {
   display: flex;
-  list-style: circle; 
+  list-style: circle;
   column-gap: 33px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .header-logo {
-  justify-self: center;  
+  justify-self: center;
 }
 
 .header_logo-image {
@@ -66,17 +66,17 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 100%;
-  height:100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  position:absolute;
+  position: absolute;
   inset: 0;
   z-index: 0;
 }
 
-.cover-title {  
+.cover-title {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -108,10 +108,10 @@
 }
 
 .cover-description {
-  display:flex;
+  display: flex;
   justify-self: center;
   align-items: center;
-  padding-top: 140px; 
+  padding-top: 140px;
 }
 
 .cover-description-text,
@@ -120,19 +120,19 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   z-index: 0;
 }
 
 .cover-description-text {
   word-spacing: 18px;
-  line-height: 28px
+  line-height: 28px;
 }
 
 .bet-button {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   width: 257px;
   height: 52px;
   line-height: normal;
@@ -171,14 +171,14 @@
 }
 
 a .card-link {
-  display:block;
+  display: block;
   height: 100%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   min-height: 450px;
   position: relative;
   z-index: 1;
@@ -193,7 +193,7 @@ a .card-link {
   padding-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -207,7 +207,7 @@ a .card-link {
   padding-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -240,14 +240,14 @@ a .card-link {
 }
 
 .about {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-areas: 
-  "logo title title"
-  ". text text";
+  grid-template-areas:
+    "logo title title"
+    ". text text";
 }
 
 .about_logo {
@@ -328,7 +328,7 @@ a .card-link {
   justify-content: center;
   list-style: none;
   column-gap: 45px;
-}  
+}
 
 .footer_social-list-item {
   justify-self: center;
